@@ -105,12 +105,12 @@ void Demo05_Crashes()
     HealthPool* nothing{ nullptr };
 
      //nothing->TakeDamage(10);
-    //
-    //   Exception thrown: read access violation.
-    //   nothing was nullptr.
+    ////
+    ////   Exception thrown: read access violation.
+    ////   nothing was nullptr.
 
     //HealthPool* neverSet;               // <-- breakpoint on the NEXT line,
-    //                                    //     then look at neverSet in Locals
+    ////                                    //     then look at neverSet in Locals
     //std::cout << "stop here and read the Watch window\n";
 
     //neverSet->TakeDamage(10);
@@ -118,7 +118,7 @@ void Demo05_Crashes()
     ////   Exception thrown: read access violation.
     ////   neverSet was 0xCCCCCCCCCCCCCCCC.
 
-    std::cout << "\n";
+    //std::cout << "\n";
 }
 
 // =============================================================================
@@ -145,7 +145,7 @@ void Demo06_Assert()
 
 int main()
 {
-    Demo01_Breakpoints();
+    //Demo01_Breakpoints();
     //Demo02_Inspecting();
     //Demo03_CallStack();
     //Demo04_Conditional();
